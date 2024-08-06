@@ -1,0 +1,88 @@
+/* Define o estilo geral do corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Fonte limpa e moderna */
+    background-color: #f4f4f4; /* Cor de fundo suave */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Cor do texto */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Altura total da tela */
+}
+
+/* Estilo para o formulário */
+form {
+    background-color: #fff; /* Cor de fundo branca para o formulário */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 20px; /* Espaçamento interno */
+    width: 300px; /* Largura fixa */
+}
+
+/* Estilo para o campo fieldset */
+fieldset {
+    border: none; /* Remove a borda padrão */
+    padding: 0; /* Remove o espaçamento interno */
+    margin: 0; /* Remove a margem */
+}
+
+/* Estilo para a legenda do formulário */
+legend {
+    font-size: 1.5em; /* Tamanho maior do texto */
+    color: #4CAF50; /* Cor verde para a legenda */
+    margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+/* Estilo para os rótulos */
+label {
+    display: block; /* Faz o rótulo ocupar toda a largura disponível */
+    margin-bottom: 5px; /* Espaçamento inferior */
+    color: #333; /* Cor do texto */
+}
+
+/* Estilo para os campos de entrada de texto */
+input[type="text"],
+select {
+    width: 100%; /* Largura total do campo */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #ddd; /* Borda cinza clara */
+    border-radius: 4px; /* Bordas arredondadas */
+    margin-bottom: 15px; /* Espaçamento inferior */
+    box-sizing: border-box; /* Inclui o padding e border na largura total */
+}
+
+/* Estilo para o botão de envio */
+input[type="submit"] {
+    background-color: #4CAF50; /* Cor de fundo verde */
+    color: #fff; /* Cor do texto branco */
+    border: none; /* Remove a borda padrão */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 4px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+    font-size: 1em; /* Tamanho da fonte */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049; /* Cor de fundo verde escuro ao passar o mouse */
+}
+
+/* Estilo para o botão de voltar ao menu */
+button {
+    background-color: transparent; /* Fundo transparente */
+    border: none; /* Remove a borda padrão */
+    padding: 0; /* Remove o espaçamento interno */
+    margin-top: 20px; /* Espaçamento superior */
+}
+
+button a {
+    color: #4CAF50; /* Cor verde para o link */
+    text-decoration: none; /* Remove o sublinhado */
+    font-weight: bold; /* Texto em negrito */
+}
+
+button a:hover {
+    text-decoration: underline; /* Sublinha o link ao passar o mouse */
+    color: #333; /* Cor cinza escuro ao passar o mouse */
+}

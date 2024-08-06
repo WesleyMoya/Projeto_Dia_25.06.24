@@ -1,0 +1,48 @@
+/* Define o estilo geral da página */
+body {
+    font-family: Arial, sans-serif; /* Fonte limpa e moderna */
+    background-color: #f4f4f4; /* Cor de fundo suave */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Cor do texto */
+}
+
+/* Estilo para o cabeçalho principal */
+h1 {
+    text-align: center; /* Centraliza o texto */
+    color: #4CAF50; /* Cor verde para o título */
+    margin-top: 20px;
+    font-size: 2.5em; /* Tamanho maior do texto */
+}
+
+/* Estilo para os subtítulos das seções */
+h3 {
+    color: #333; /* Cor do texto */
+    border-bottom: 2px solid #4CAF50; /* Linha verde embaixo do texto */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para os links dentro das seções */
+a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #4CAF50; /* Cor verde para os links */
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline; /* Sublinha o link ao passar o mouse */
+    color: #333; /* Muda a cor para cinza escuro ao passar o mouse */
+}
+
+/* Estilo para os itens h4 */
+h4 {
+    margin: 0;
+    padding: 5px 0;
+}
+
+/* Adiciona espaçamento entre as seções */
+br {
+    display: block;
+    margin: 20px 0;
+}

@@ -1,0 +1,39 @@
+CREATE DATABASE Banco;
+USE Banco;
+
+CREATE TABLE Pessoa (
+	id INT AUTO_INCREMENT,
+    nome VARCHAR(50),
+    email VARCHAR(255),
+    endereco VARCHAR(255),
+    bairro VARCHAR(50),
+    id_cidade INT,
+    cep VARCHAR(50),
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE Animal (
+	id INT AUTO_INCREMENT,
+    nome VARCHAR(50),
+    especie VARCHAR(50),
+    raca VARCHAR(50),
+    data_nascimento DATE,
+    idade INT,
+    castrado BOOL,
+    id_pessoa INT,
+    PRIMARY KEY (id)
+    
+);
+
+CREATE TABLE Cidade (
+	id INT AUTO_INCREMENT,
+    nome VARCHAR(50),
+    estado VARCHAR(50),
+    PRIMARY KEY (id)
+);
+
+ALTER TABLE  pessoa
+	ADD FOREIGN KEY (id_cidade) REFERENCES cidade(id);
+
+ALTER TABLE animal
+	ADD FOREIGN KEY (id_pessoa) REFERENCES pessoa(id)

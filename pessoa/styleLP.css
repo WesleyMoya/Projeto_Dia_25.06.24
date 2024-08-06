@@ -1,0 +1,78 @@
+/* Define o estilo geral do corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Fonte limpa e moderna */
+    background-color: #f4f4f4; /* Cor de fundo suave */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Cor do texto */
+    display: flex;
+    flex-direction: column; /* Alinha os itens em coluna */
+    align-items: center; /* Alinha os itens horizontalmente no centro */
+    padding: 20px; /* Adiciona espaçamento interno */
+}
+
+/* Estilo para o título */
+h1 {
+    color: #4CAF50; /* Cor verde */
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+/* Estilo para o botão */
+button {
+    background-color: #4CAF50; /* Cor de fundo verde */
+    border: none; /* Remove a borda padrão */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 4px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+    color: #fff; /* Cor do texto branco */
+    font-size: 1em; /* Tamanho da fonte */
+    margin: 10px; /* Espaçamento ao redor do botão */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+button a {
+    color: #fff; /* Cor do texto do link */
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+
+button:hover {
+    background-color: #45a049; /* Cor de fundo verde escuro ao passar o mouse */
+}
+
+/* Estilo para a tabela */
+table {
+    width: 100%; /* Largura total da tabela */
+    max-width: 1000px; /* Largura máxima da tabela */
+    border-collapse: collapse; /* Remove o espaçamento entre células */
+    margin-top: 20px; /* Espaçamento superior */
+    background-color: #fff; /* Cor de fundo branca */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilo para as células da tabela */
+th, td {
+    border: 1px solid #ddd; /* Borda cinza clara */
+    padding: 10px; /* Espaçamento interno */
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+/* Estilo para os cabeçalhos da tabela */
+th {
+    background-color: #4CAF50; /* Cor de fundo verde */
+    color: #fff; /* Cor do texto branco */
+}
+
+/* Estilo para as linhas alternadas da tabela */
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Cor de fundo cinza claro */
+}
+
+/* Estilo para os links de alterar e deletar */
+a {
+    color: #4CAF50; /* Cor verde para o link */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+a:hover {
+    text-decoration: underline; /* Sublinha o link ao passar o mouse */
+}
