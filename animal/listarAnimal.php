@@ -16,7 +16,7 @@
         include("../include/conexao.php");
 
         // Consulta para selecionar todos os dados dos animais e seus respectivos donos
-        $sql = "SELECT ani.id AS animal_id, ani.nome AS animal_nome, ani.especie AS animal_especie, ani.raca AS animal_raca, 
+        $sql = "SELECT ani.foto AS foto, ani.id AS animal_id, ani.nome AS animal_nome, ani.especie AS animal_especie, ani.raca AS animal_raca, 
         ani.data_nascimento AS animal_nascimento, ani.idade AS animal_idade, ani.castrado AS animal_castrado, pessoa.nome AS nome_dono
         FROM animal ani
         LEFT JOIN pessoa ON ani.id_pessoa = pessoa.id;";
@@ -35,6 +35,7 @@
     <table>
         <tr>
             <th>Código</th>
+            <th>Foto</th>
             <th>Nome</th>
             <th>Espécie</th>
             <th>Raça</th>
@@ -51,6 +52,11 @@
         {
             echo "<tr>";
             echo "<td>".$row['animal_id']."</td>";
+            if($row['foto'] == ""){
+                echo "<td></td>";
+            }else{
+                echo "<td><img src='".$row['foto']."' width ='80' height ='100'/></td>";
+            }
             echo "<td>".$row['animal_nome']."</td>";
             echo "<td>".$row['animal_especie']."</td>";
             echo "<td>".$row['animal_raca']."</td>";

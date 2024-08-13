@@ -1,3 +1,10 @@
+<?php
+include('../include/conexao.php');
+$id = $_GET['id'];
+$sql = "SELECT * FROM animal WHERE id=$id";
+$result = mysqli_query($con, $sql);
+$row = mysqli_fetch_array($result);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
